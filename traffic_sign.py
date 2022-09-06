@@ -35,9 +35,11 @@ for i in range(classes):
 data = np.array(data)
 labels = np.array(labels)
 
+
 print(data.shape, labels.shape)
 #Splitting training and testing dataset
 X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=42)
+
 
 print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 
